@@ -90,9 +90,12 @@ L’application comportera les écrans suivants :
 1. Clonez ce dépôt sur votre machine locale :
    ```bash
    git clone https://github.com/ons-manai08/carnet-de-voyage.git
-2.Accédez au dossier du projet :
-cd carnet-de-voyage
-3.Installez les dépendances nécessaires :
-npm install
-4.Lancez l’application en mode développement :
-expo start
+2. Accédez au dossier du projet :
+    ```bash
+      cd carnet-de-voyage
+3. Installez les dépendances nécessaires :
+       ```bash
+      npm install
+ 4. Lancez l’application en mode développement :
+     ```bash
+         expo start
