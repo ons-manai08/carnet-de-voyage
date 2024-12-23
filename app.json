@@ -13,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "usesNonExemptEncryption": ["apple", "no"]
     },
     "android": {
       "adaptiveIcon": {
@@ -22,7 +23,37 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "buildProperties": {
+              "EXPERIMENTAL_DISABLE_DEV_REACT_NATIVE_BUNDLE": true,
+              "EXPERIMENTAL_DEV_REACT_NATIVE_BUNDLE": false,
+              "EXPERIMENTAL_DEV_CLIENT": false
+            }
+          },
+          "ios": {
+            "buildProperties": {
+              "EXPERIMENTAL_DISABLE_DEV_REACT_NATIVE_BUNDLE": true,
+              "EXPERIMENTAL_DEV_REACT_NATIVE_BUNDLE": false,
+              "EXPERIMENTAL_DEV_CLIENT": false
+            }
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "web.bundler": "metro"
+    },
+    "web.config": {
+    },
+    "ios.config": {
+      "usesNonExemptEncryption": ["apple", "no"]
     }
   }
 }
