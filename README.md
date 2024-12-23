@@ -94,7 +94,7 @@ L’application comportera les écrans suivants :
     ```bash
       cd carnet-de-voyage
 3. Installez les dépendances nécessaires :
-       ```bash
+   ```bash
       npm install
  4. Lancez l’application en mode développement :
      ```bash
